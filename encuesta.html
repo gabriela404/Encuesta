@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Encuesta</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.css"/>
+
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+crossorigin="anonymous">
+
+<style type="text/css">
+    .invalid-wizard-input {
+        border-color: #dc3545;
+    }
+    .invalid-wizard {
+        color: #dc3545;
+    }
+    .valid-wizard-input {
+        border-color: #28a745;
+    }
+    .valid-wizard {
+        color: #28a745;
+    }
+    .wizard-message {
+        display: none;
+        color: #ff3545;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <form id="regiration_form" novalidate action="file:///C:/Users/gabriela%20jimenez/Desktop/Gaby/startbootstrap-freelancer-gh-pages/index.html" method="post">
+
+<div class="container">
+    <h3>Encuesta para encontrar a tu amigo ideal</h3>
+    <form action="#" data-end="5" novalidate>
+        <div class="form-group wizard" id="wizard-0">
+            <h3>Filosofia Canina ¡Vive como perro!</h3>
+           <h3>Si vives de acuerdo a la sabia filosofía canina, serás una mejor persona y lo más importante: ¡serás feliz!</h3> 
+            <ol>
+                <li>Nunca dejes la oportunidad de salir a pasear.</li>
+                <li>Conéctate con la naturaleza y observa todo lo que puedas.</li>
+                <li>Experimenta la sensación del viento en tu cara sólo por placer.</li>
+                <li>En ocasiones está permitido romper las reglas ¡hazlo!</li>
+                <li>Si alguien está teniendo un mal día, acércate en silencio y dales tu apoyo.</li>
+                <img src= " C:\Users\gabriela jimenez\Desktop\Gaby\startbootstrap-freelancer-gh-pages\assets\img\portfolio\perro en blanco y negro.jpg" width="662" height="508" />
+
+               
+            </ol>
+            <a href="#next" class="btn btn-success next">Empecemos </a>
+        </div>
+        <div class="form-group wizard" id="wizard-1">
+            <label for="nombre">Nombre <span class="wizard-message">es requerido, y debe tener entre 3 y 8 caracteres</span></label>
+            <input type="text" name="nombre" data-min="3" data-max="8" class="form-control" required>
+
+            <label for="apellido">Apellido (Opcional)</label>
+            <input type="text" name="apellido" class="form-control">
+
+           
+
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        <div class="form-group wizard" id="wizard-2">
+            <label for="direccion">Dirección <span class="wizard-message">es requerido, y debe tener un maximo 10 caracteres</span></label>
+            <input type="text" name="direccion" data-max="10" class="form-control" required>
+
+     
+
+            <label for="telefono">Telefono (Opcional)</label>
+            <input type="number" name="telefono" class="form-control">
+             <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Enviar</a>
+        </div>
+        <div class="form-group wizard" id="wizard-3">
+            <label for="dia">Tipo de vivienda <span class="wizard-message">es requerido, selecciono uno.</span></label>
+            <select name="dia" class="form-control" required>
+                <option>Selecione un día</option>
+                <option value="l">Casa</option>
+                <option value="m">Departament</option>
+                
+            </select>
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        
+         <div class="form-group wizard" id="wizard-4">
+            <label for="optradio">¿Tienes tiempo de sacar a pasear al perro? <span class="wizard-message">es requerido, seleccione uno.</span></label>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt1" required>Si</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt2" required>No</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="optradio" value="opt3" >Nunca</label>
+            </div>
+
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        <div class="form-group wizard" id="wizard-4">
+            <label for="optradio">¿Cuantas horas tienes para dedicarle al perro?<span class="wizard-message">es requerido, seleccione uno.</span></label>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt1" required>30 min</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt2" required>1hr</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="optradio" value="opt3" >2+</label>
+            </div>
+
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        <div class="form-group wizard" id="wizard-4">
+            <label for="optradio">¿Cuenta con un veterinario cercas de su vivienda ?<span class="wizard-message">es requerido, seleccione uno.</span></label>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt1" required>Si</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt2" required>No</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="optradio" value="opt3" >N/A</label>
+            </div>
+
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        <div class="form-group wizard" id="wizard-4">
+            <label for="optradio">¿Que tipo de raza le llama mas la atención?<span class="wizard-message">es requerido, seleccione uno.</span></label>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt1" required>Chica</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio" value="opt2" required>Mediana</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="optradio" value="opt3" >N/A</label>
+            </div>
+
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next">Siguiente</a>
+        </div>
+        <div class="form-group wizard" id="wizard-5">
+            <div class="form-group">
+              <label for="myoption">¿Que tipo de raza le llama mas la atención?
+                
+                <span class="wizard-message">¿Como te gustaria que fuera tu perro ?</span>
+              </label>
+            </div>
+                    
+                <img src= "C:\Users\Usuario\Documents\Proyecto\bootstrap-5.2.1-dist\bootstrap-5.2.1-dist\caras.jpg" width="400" height="400" />
+              <div class="form-group">
+                <select class="form-control" id="tipoAtencion">
+              
+              
+                        <option value="casa"  required>Seleccione la opcion correcta</option>
+                        <option value="casa" required>Terco, jugueton, lider</option>
+                        <option value="dep" required>Jugueton y atletico</option>
+                        <option value="dep" required>Sociable y aventurero</option>
+                        <option value="dep" required>Dormilones</option>
+                        <option value="dep" required>Perro guia</option>
+                        <option value="dep" required>Perro cazador</option>
+                 </select>
+            </div>
+
+            <a href="#back" class="btn btn-warning back">Atras</a>
+            <a href="#next" class="btn btn-success next" value="Enviar formulario">enviar</a>
+           
+        </div>
+    </form>
+</div>
+    </form>
+</div>
+<!-- Compiled and minified jquery -->
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script 
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    //creamos un objeto general que contendra todo lo relacionado 
+    function wizard(){
+        // Propiedades
+        // paso de inicio
+        this.step = 0;
+        // paso final
+        this.endStep = 0;
+
+        // establemos el paso y lo mostramos
+        this.init = function(step) {
+            this.step = step;
+            this.show();
+            
+            if ($('form').data('end') != undefined) {
+                this.endStep = $('form').data('end');
+            }
+        }
+        
+        // Esta funcion se encarga de optener los diferentes input required
+        // y llamar a las diferentes funciones de validacion en funcion del type
+        this.validate = function()
+        {
+            // optenemos todos los input requires del paso actual
+            let input = $('#wizard-'+this.step+' :input[required]');
+            // declaramos una bandera
+            var flag = true;
+            // recorremos los input required
+            for (var i = input.length - 1; i >= 0; i--) {
+                let valid;
+                // aqui determinamos a que funcion de validacion se ha de llamar en segun el type 
+                // las funciones de validacion deben retornar true o false
+                switch(input[i].type) {
+                    case "text":
+                        valid = this.validateText(input[i]);
+                        break;
+                    case "tel":
+                        valid = this.validateTel(input[i]);
+                        break;
+                    case "textarea":
+                        valid = this.validateText(input[i]);
+                        break;
+                    case "select-one":
+                        valid = this.validateSelectOne(input[i]);
+                        break;
+                    case "select-multiple":
+                        valid = this.validateSelectMultiple(input[i]);
+                        break;
+                    case "radio":
+                        valid = this.validateRadio(input[i]);
+                        break;
+                    case "option":
+                        valid = input[i].option;
+                        break;
+                    default:
+                        valid = true;
+                        console.log('Campo input no reconocido');
+                        break;
+                }
+
+                // comprobamos si paso la validacion
+                if (!valid) {
+                    // si no paso la validación 
+                    // cambiamos la bandera a false
+                    flag = false;
+                    // y añadimos los estilos de error
+                    $( "[name='"+input[i].name+"']" ).removeClass('valid-wizard-input');
+                    $( "label[for='"+input[i].name+"']" ).removeClass('valid-wizard');
+                    $( "[name='"+input[i].name+"']" ).addClass('invalid-wizard-input');
+                    $( "label[for='"+input[i].name+"']" ).addClass('invalid-wizard');
+                    $( "label[for='"+input[i].name+"'] > span" ).show();
+                } else {
+                    // si paso la validacion
+                    // añadimos los estilos de ok
+                    $( "[name='"+input[i].name+"']" ).removeClass('invalid-wizard-input');
+                    $( "label[for='"+input[i].name+"']" ).removeClass('invalid-wizard');
+                    $( "[name='"+input[i].name+"']" ).addClass('valid-wizard-input');
+                    $( "label[for='"+input[i].name+"']" ).addClass('valid-wizard');
+                    $( "label[for='"+input[i].name+"'] > span" ).hide();
+                }
+            }
+
+            // comprobamos la bandera
+            // si es true, avanzamos un paso
+            if (flag) {
+                if (this.endStep > this.step) {
+                    this.step++;
+                    this.show();
+                } else {
+                    // si es el ultimo paso enviamos
+                    $('form').submit();
+                }
+            }
+
+            return flag;
+        }
+
+        // esta funcion esconde todos los pasos y muestra el paso actual
+        this.show = function()
+        {
+            $('.wizard').hide();
+            $('#wizard-'+this.step).fadeIn("slow");
+        }
+
+        // funcion para validar type=text
+        this.validateText = function(input)
+        {
+            let min, max;
+
+            if (input.dataset['min'] != undefined) {
+                min = input.dataset['min'];
+            } else {
+                min = 1;
+            }
+
+            if (input.dataset['max'] != undefined) {
+                max = input.dataset['max'];
+            } else {
+                max = 255;
+            }
+
+            if(input.value.length >= min && input.value.length <= max) {
+                return true;
+            }
+            return false;
+        }
+
+        // funcion para validar type=tel
+        this.validateTel = function(input)
+        {
+            let patterTel = /^(?:(?:\+|00)?34)?[6-9]\d{8}$/;
+
+            if( patterTel.test(input.value) ) {
+                return true;
+            }
+            return false;
+        }
+
+        // funcion para validar type=select
+        this.validateSelectOne = function(input)
+        {
+            if( input.options.selectedIndex != 0 ) {
+                return true;
+            }
+            return false;
+        }
+
+        // funcion para validar type=select-multiple
+        this.validateSelectMultiple = function(input)
+        {
+            if( input.selectedOptions.length > 0 ) {
+                return true;
+            }
+            return false;
+        }
+
+        // funcion para validar type=radio
+        this.validateRadio = function(input)
+        {
+            let checked = $('input:radio[name='+input.name+']:checked').val()
+            if (checked) {
+                return true;
+            }
+            return false;
+        }
+    }
+
+
+    /* UTILIZACION */
+
+    // inicializamos wizard
+    w = new wizard;
+    // establecemos el paso de inicio
+    w.init(0);
+    // establecemos el ultimo paso
+    w.endStep = 5;
+    // escuchamos el evento click sobre class .next
+    $( ".next" ).on( "click", function() {
+        // llamamos a validate para hacer las comprobaciones de los input
+        w.validate()
+    });
+
+    // escuchamos el evento click sobre class .back
+    $( ".back" ).on( "click", function() {
+        // restamos un paso
+        w.step--;
+        // mostramos el paso actual
+        w.show()
+    });
+
+    // Prevenir envio con enter
+    $('input').keypress(function (e) {
+      if (e.which == 13) {
+        // prevenimos el envio
+        e.preventDefault();
+        e.stopPropagation();
+        // llamamos a validate para validar y avanzar
+        w.validate()
+      }
+    });
+
+</script>
+
+
+
+ <span class="text-muted">Escogiendo a tu mejor amigo © <script>document.write(new Date().getFullYear())</script> </span>
+</body>
+</html>
